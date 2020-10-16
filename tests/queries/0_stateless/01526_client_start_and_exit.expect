@@ -8,5 +8,5 @@ if ![info exists env(CLICKHOUSE_PORT_TCP)] {set env(CLICKHOUSE_PORT_TCP) 9000}
 
 spawn clickhouse-client --port "$env(CLICKHOUSE_PORT_TCP)"
 expect ":) "
-send -- "\4"
+send -- "\4" # EOT (end of transmission), i.e. Ctrl+D pressed to leave client
 expect eof
