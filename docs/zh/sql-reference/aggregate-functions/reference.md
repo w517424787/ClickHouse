@@ -293,7 +293,7 @@ num
 
 ## argMin(arg,val) {#agg-function-argmin}
 
-计算 ‘arg’ 最小值的值 ‘val’ 价值。 如果有几个不同的值 ‘arg’ 对于最小值 ‘val’，遇到的第一个值是输出。
+计算列 ‘val’ 最小值对应的列 ‘arg’ 的值。如果有几个不同的值 ‘arg’ 对应最小值 ‘val’，输出遇到的第一个值。
 
 **示例:**
 
@@ -317,7 +317,7 @@ SELECT argMin(user, salary) FROM salary
 
 ## argMax(arg,val) {#agg-function-argmax}
 
-计算 ‘arg’ 最大值 ‘val’ 价值。 如果有几个不同的值 ‘arg’ 对于最大值 ‘val’，遇到的第一个值是输出。
+计算列 ‘val’ 最大值对应的列 ‘arg’ 的值。 如果有几个不同的值 ‘arg’ 对应最大值 ‘val’，输出遇到的第一个值。
 
 ## sum(x) {#agg_function-sum}
 
